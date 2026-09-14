@@ -1,32 +1,35 @@
 # Prospección B2B
 
 Bot personal de prospección B2B. Panel web con URL fija (deployado en
-Vercel), base de datos Postgres real (no en el navegador, no en localStorage).
-No envía emails ni contacta a nadie solo — solo busca, investiga, puntúa y
-deja los prospectos preparados. La búsqueda/investigación no corre sola: se
-la pedís a Claude en una conversación, y él escribe los resultados
-directamente en la base.
+Railway, igual que el del restaurante), base de datos Postgres real (no en
+el navegador, no en localStorage). No envía emails ni contacta a nadie
+solo — solo busca, investiga, puntúa y deja los prospectos preparados. La
+búsqueda/investigación no corre sola: se la pedís a Claude en una
+conversación, y él escribe los resultados directamente en la base.
 
 ## Deploy (una sola vez)
 
-1. **Creá la base Postgres gratis.** Más simple: entrá a
-   [Vercel](https://vercel.com) → tu cuenta → **Storage** → **Create
-   Database** → Postgres (Neon). Te da un `DATABASE_URL` (formato
-   `postgresql://usuario:password@host/db?sslmode=require`).
-2. **Importá el repo en Vercel**: New Project → importá
-   `Agustinlarici/BotSales` (ya está en GitHub). Si creaste la base desde
-   el paso 1 dentro del mismo proyecto, el `DATABASE_URL` queda seteado
-   solo; si no, agregalo vos en Project Settings → Environment Variables.
-3. **Deploy.** Vercel corre `pnpm install` (que ya ejecuta
-   `prisma generate` automáticamente) y `pnpm build`. Te da una URL fija
-   tipo `botsales.vercel.app` — esa es tu panel, abrila cuando quieras.
-4. **Creá las tablas una sola vez**: pasame el `DATABASE_URL` (o corré vos
-   `pnpm exec prisma db push` con esa variable seteada) para inicializar
-   el esquema en la base nueva.
+1. Andá a **railway.app** → **New Project** → **Deploy from GitHub repo**
+   → elegí `Agustinlarici/BotSales`.
+2. Dentro de ese mismo proyecto: **+ New** → **Database** → **Add
+   PostgreSQL**. Railway crea el servicio de base y lo deja disponible
+   para referenciar.
+3. En el servicio de la app (no el de la base) → pestaña **Variables** →
+   agregá `DATABASE_URL` como referencia a
+   `${{Postgres.DATABASE_URL}}` (Railway te la sugiere sola al escribir
+   `${{`).
+4. En el servicio de la app → **Settings** → **Networking** → **Generate
+   Domain**. Ahí te da la URL fija tipo `botsales.up.railway.app` — es tu
+   panel, abrilo cuando quieras.
+5. Railway detecta Next.js solo (build con `pnpm install && pnpm build`,
+   arranca con `pnpm start`, que ya respeta el puerto que asigna Railway).
+6. **Creá las tablas una sola vez**: pasame el `DATABASE_URL` del servicio
+   Postgres (Variables → `DATABASE_URL`, ahí sí el valor real, no la
+   referencia) para inicializar el esquema con `prisma db push`.
 
 ## Cómo se usa
 
-1. Entrás a tu URL de Vercel y creás una campaña: qué vendés, dónde
+1. Entrás a tu URL de Railway y creás una campaña: qué vendés, dónde
    buscar, sector/tamaño/palabras clave, cargos objetivo, cantidad máxima
    de empresas y umbral mínimo de score.
 2. Cargás los criterios de "buen prospecto" con su peso.
@@ -35,7 +38,7 @@ directamente en la base.
    contacto/email, y guardo todo directo en tu base Postgres con
    `scripts/importRun.ts` — deduplicando por dominio, así no se repiten
    empresas entre corridas.
-4. Refrescás tu URL de Vercel y ya está la tabla actualizada: Score,
+4. Refrescás tu URL de Railway y ya está la tabla actualizada: Score,
    Empresa, Ubicación, Motivo, Contacto, Email, Web. Entrás a cada empresa
    para ver el desglose del score, evidencia, contacto y fuentes.
 5. Actualizás el estado de contacto a mano (nunca cambia solo).
