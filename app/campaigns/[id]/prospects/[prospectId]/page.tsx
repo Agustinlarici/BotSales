@@ -167,7 +167,7 @@ export default async function ProspectDetailPage({
               <p className="text-sm whitespace-pre-wrap mt-1">{d.body}</p>
               <p className="text-xs mt-2" style={{ color: "var(--muted)" }}>
                 {d.deliveryMethod === "eml"
-                  ? `Guardado como .eml${d.filePath ? `: ${d.filePath}` : ""}`
+                  ? "Enviado como archivo .eml por el chat"
                   : "Borrador creado en Outlook"}
               </p>
             </div>
