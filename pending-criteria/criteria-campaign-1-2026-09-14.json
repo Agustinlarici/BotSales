@@ -1,0 +1,30 @@
+{
+  "campaignId": 1,
+  "criteria": [
+    {
+      "label": "Señales de procesos manuales o ineficiencia operativa",
+      "description": "Búsquedas de empleo pidiendo perfiles administrativos/operativos repetitivos, menciones de ERP viejo o procesos en papel/Excel, quejas públicas sobre tiempos de producción.",
+      "weight": 25
+    },
+    {
+      "label": "Tamaño y estabilidad adecuados",
+      "description": "10 a 50 empleados confirmado en fuente pública (sitio, LinkedIn, registro de empresas), sin señales de crisis o cierre.",
+      "weight": 15
+    },
+    {
+      "label": "Interés reciente en digitalización o tecnología",
+      "description": "Noticias, posts o búsquedas de empleo relacionadas a transformación digital, IT, automatización o Industria 4.0 en los últimos 12 meses.",
+      "weight": 20
+    },
+    {
+      "label": "Procesos manufactureros repetitivos automatizables",
+      "description": "El tipo de producción de la empresa involucra tareas repetitivas (ensamblado, control de calidad, logística interna, RRHH administrativo) que suelen beneficiarse de automatización con IA.",
+      "weight": 20
+    },
+    {
+      "label": "Contacto decisor identificable públicamente",
+      "description": "Se puede identificar públicamente al dueño, responsable de producción o de RRHH (sitio, LinkedIn, registro de cámara de comercio).",
+      "weight": 20
+    }
+  ]
+}

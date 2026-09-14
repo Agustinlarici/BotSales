@@ -18,6 +18,7 @@ import {
 
 const PENDING_RUNS_DIR = join(process.cwd(), "pending-runs");
 const PENDING_DRAFTS_DIR = join(process.cwd(), "pending-drafts");
+const PENDING_CRITERIA_DIR = join(process.cwd(), "pending-criteria");
 
 type ProspectPayloadItem = Omit<ProspectInput, "domain"> & {
   website: string;
@@ -38,6 +39,11 @@ interface DraftPayload {
   body: string;
   deliveryMethod: "eml" | "outlook_draft";
   outlookMessageId?: string;
+}
+
+interface CriteriaPayload {
+  campaignId: number;
+  criteria: { label: string; description?: string; weight: number }[];
 }
 
 async function listJsonFiles(dir: string): Promise<string[]> {
@@ -119,8 +125,41 @@ async function processDraftFile(name: string) {
   }
 }
 
+async function processCriteriaFile(name: string) {
+  const path = join(PENDING_CRITERIA_DIR, name);
+  try {
+    const payload: CriteriaPayload = JSON.parse(await readFile(path, "utf-8"));
+    const campaign = await prisma.campaign.findUnique({ where: { id: payload.campaignId } });
+    if (!campaign) throw new Error(`No existe la campaña ${payload.campaignId}`);
+
+    const created = await prisma.$transaction(
+      payload.criteria.map((c) =>
+        prisma.criterion.create({
+          data: {
+            campaignId: payload.campaignId,
+            label: c.label,
+            description: c.description,
+            weight: c.weight,
+          },
+        })
+      )
+    );
+    const summary = created.map((c) => `id ${c.id} (${c.label})`).join(", ");
+    await markProcessed(name, "ok", `${created.length} criterios creados: ${summary}`);
+    console.log(`[pending-criteria] ${name}: ok (${summary})`);
+  } catch (err) {
+    const detail = err instanceof Error ? err.message : String(err);
+    await markProcessed(name, "error", detail);
+    console.error(`[pending-criteria] ${name}: error - ${detail}`);
+  }
+}
+
 export async function processPendingImports() {
   try {
+    for (const name of await listJsonFiles(PENDING_CRITERIA_DIR)) {
+      if (await alreadyProcessed(name)) continue;
+      await processCriteriaFile(name);
+    }
     for (const name of await listJsonFiles(PENDING_RUNS_DIR)) {
       if (await alreadyProcessed(name)) continue;
       await processRunFile(name);
