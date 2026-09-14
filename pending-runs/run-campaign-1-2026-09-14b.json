@@ -1,0 +1,121 @@
+{
+  "campaignId": 1,
+  "companiesFound": 3,
+  "companiesRejected": 1,
+  "notes": "Segunda corrida, con acceso directo a los sitios de las empresas (ya no solo resúmenes de búsqueda) desde que se destrabó el acceso a la red. Descartada: Rambaldi Meccanica (Castenaso, BO) — su sitio está protegido por un desafío anti-bot (captcha) que impide verificar datos directamente.",
+  "prospects": [
+    {
+      "website": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm",
+      "companyName": "O.M.C. dei F.lli Capitanio S.r.l. (OM Capitanio)",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "BG",
+      "city": "Valbrembo",
+      "sector": "Meccanica di precisione — automotive, energia, nautica, alimentare",
+      "companySizeEstimate": "Non del tutto chiaro dal sito: 'tre titolari e quattordici dipendenti per ciascuna divisione' (due divisioni, Automotive e Oil&Gas) — probabilmente tra 14 e 28 dipendenti totali.",
+      "score": 74,
+      "reasonSummary": "Azienda familiare dal 1972 che dichiara pubblicamente investimenti recenti in tecnologie digitali e l'adesione al Piano Industria 4.0, oltre all'introduzione di sistemi CAD/CAD-CAM: segnale esplicito e diretto di interesse per la digitalizzazione, il più forte trovato finora.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 14,
+          "evidenceText": "Il sito racconta il passaggio da una dimensione puramente artigianale all'introduzione di macchine a controllo numerico nel tempo, suggerendo processi storicamente manuali in fase di modernizzazione parziale.",
+          "evidenceSourceUrl": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 12,
+          "evidenceText": "Azienda familiare attiva dal 1972, oggi con tre titolari; il numero esatto di dipendenti non è del tutto chiaro dal testo del sito ('quattordici dipendenti per ciascuna divisione').",
+          "evidenceSourceUrl": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 20,
+          "evidenceText": "Testo esplicito dell'azienda: 'Con i recenti investimenti nelle tecnologie digitali la nostra azienda ha aderito al Piano Industria 4.0', oltre all'introduzione recente di sistemi CAD/CAD-CAM.",
+          "evidenceSourceUrl": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm"
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Produzione di pezzi prototipali, pezzi singoli e piccoli lotti tramite centri di tornitura e lavoro CNC (3 e 5 assi): processi ripetibili e automatizzabili.",
+          "evidenceSourceUrl": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 10,
+          "evidenceText": "Email aziendale pubblica (info@omcapitanio.com) e telefono; si menzionano 'tre titolari' ma senza nomi specifici pubblicati.",
+          "evidenceSourceUrl": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": "info@omcapitanio.com",
+        "emailSourceUrl": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm",
+        "linkedinUrl": null,
+        "phone": "+39 035.528061",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.omcapitanio.com/it-it/lavorazioni-meccaniche-di-precisione-company.htm", "title": "Azienda / Chi siamo / Storia — OM Capitanio (pagina consultata direttamente)" }
+      ]
+    },
+    {
+      "website": "https://www.flliferioli.com/",
+      "companyName": "F.lli Ferioli S.r.l.",
+      "country": "Italia",
+      "region": "Emilia-Romagna",
+      "province": "MO",
+      "city": "Finale Emilia",
+      "sector": "Carpenteria metallica — stampaggio lamiere, taglio laser, saldatura",
+      "companySizeEstimate": "11-50 dipendenti (registro camerale, fatturato 2024 ~6,77 milioni di euro)",
+      "score": 64,
+      "reasonSummary": "Carpenteria metallica di oltre 30 anni con saldatura robotizzata già in uso: segnale concreto di familiarità con l'automazione nella propria produzione, dimensione e stabilità economica confermate dal registro camerale. Nessun contatto individuale pubblico trovato.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 10,
+          "evidenceText": "Nessuna evidenza diretta pubblicata di inefficienze operative; punteggio parziale per il tipo di attività (carpenteria/stampaggio conto terzi).",
+          "evidenceSourceUrl": "https://www.flliferioli.com/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Registro camerale conferma 11-50 dipendenti e fatturato 2024 di 6.765.901 euro; attiva da oltre 30 anni.",
+          "evidenceSourceUrl": "https://www.ufficiocamerale.it/9223/flli-ferioli-srl"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 15,
+          "evidenceText": "Il sito elenca esplicitamente 'Saldatura Robotizzata' tra i propri processi produttivi: segnale concreto che l'azienda già investe in automazione della produzione.",
+          "evidenceSourceUrl": "https://www.flliferioli.com/"
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Stampaggio lamiere, tranciatura, taglio laser 2D/3D, piegatura, saldatura robotizzata e manuale, assemblaggio: processi seriali altamente ripetitivi.",
+          "evidenceSourceUrl": "https://www.flliferioli.com/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 6,
+          "evidenceText": "Solo numeri di telefono pubblici trovati (sito e registro camerale); non è stato possibile trovare un'email diretta né il nome di un titolare o responsabile.",
+          "evidenceSourceUrl": "https://www.ufficiocamerale.it/9223/flli-ferioli-srl"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": null,
+        "emailSourceUrl": null,
+        "linkedinUrl": null,
+        "phone": "0535 92197",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.flliferioli.com/", "title": "Sito ufficiale F.lli Ferioli (pagina consultata direttamente)" },
+        { "url": "https://www.ufficiocamerale.it/9223/flli-ferioli-srl", "title": "Dati societari, dipendenti e fatturato" }
+      ]
+    }
+  ]
+}
