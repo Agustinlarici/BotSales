@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Prospección B2B",
-  description: "Bot personal de prospección B2B — 100% local.",
+  description: "Bot personal de prospección B2B.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -30,7 +30,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/" className="font-semibold tracking-tight">
               Prospección B2B
             </Link>
-            <nav className="text-sm">
+            <nav className="text-sm flex items-center gap-3">
+              <Link href="/admin/imports" style={{ color: "var(--muted)" }}>
+                Log de imports
+              </Link>
               <Link href="/campaigns/new" className="btn btn-primary">
                 + Nueva campaña
               </Link>
@@ -41,8 +44,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <footer className="text-xs px-4 py-6 text-center" style={{ color: "var(--muted)" }}>
-          Datos guardados localmente en data/prospecting.db — nada se envía a
-          ningún servidor propio ni se contacta automáticamente.
+          Datos en Postgres — nada se envía a ningún servicio externo ni se
+          contacta a nadie automáticamente.
         </footer>
       </body>
     </html>

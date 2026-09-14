@@ -132,3 +132,13 @@ model EmailDraft {
   filePath         String?
   outlookMessageId String?
 }
+
+// Registra qué archivos de pending-runs/ y pending-drafts/ ya se
+// importaron al arrancar el server, para no reprocesarlos en cada deploy.
+model ProcessedImportFile {
+  id          Int      @id @default(autoincrement())
+  filename    String   @unique
+  processedAt DateTime @default(now())
+  status      String // ok | error
+  detail      String?
+}
