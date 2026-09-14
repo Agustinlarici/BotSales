@@ -1,62 +1,55 @@
-# Prospección B2B (local)
+# Prospección B2B
 
-Bot personal de prospección B2B. Corre 100% en tu computadora: la base de
-datos es un archivo SQLite en `data/prospecting.db` (persistencia real en
-disco, no en el navegador). No envía emails ni contacta a nadie solo — solo
-busca, investiga, puntúa y deja los prospectos preparados.
+Bot personal de prospección B2B. Panel web con URL fija (deployado en
+Vercel), base de datos Postgres real (no en el navegador, no en localStorage).
+No envía emails ni contacta a nadie solo — solo busca, investiga, puntúa y
+deja los prospectos preparados. La búsqueda/investigación no corre sola: se
+la pedís a Claude en una conversación, y él escribe los resultados
+directamente en la base.
 
-## Instalación
+## Deploy (una sola vez)
 
-Requisitos: Node.js 20+ y [pnpm](https://pnpm.io).
-
-```bash
-pnpm install
-pnpm exec prisma generate
-pnpm db:push          # crea/actualiza data/prospecting.db según prisma/schema.prisma
-pnpm dev              # http://localhost:3000
-```
-
-`.env` ya apunta a `DATABASE_URL="file:../data/prospecting.db"` — no hace
-falta tocarlo para uso local.
+1. **Creá la base Postgres gratis.** Más simple: entrá a
+   [Vercel](https://vercel.com) → tu cuenta → **Storage** → **Create
+   Database** → Postgres (Neon). Te da un `DATABASE_URL` (formato
+   `postgresql://usuario:password@host/db?sslmode=require`).
+2. **Importá el repo en Vercel**: New Project → importá
+   `Agustinlarici/BotSales` (ya está en GitHub). Si creaste la base desde
+   el paso 1 dentro del mismo proyecto, el `DATABASE_URL` queda seteado
+   solo; si no, agregalo vos en Project Settings → Environment Variables.
+3. **Deploy.** Vercel corre `pnpm install` (que ya ejecuta
+   `prisma generate` automáticamente) y `pnpm build`. Te da una URL fija
+   tipo `botsales.vercel.app` — esa es tu panel, abrila cuando quieras.
+4. **Creá las tablas una sola vez**: pasame el `DATABASE_URL` (o corré vos
+   `pnpm exec prisma db push` con esa variable seteada) para inicializar
+   el esquema en la base nueva.
 
 ## Cómo se usa
 
-1. **Creá una campaña** desde la web (`+ Nueva campaña`): qué vendés, dónde
+1. Entrás a tu URL de Vercel y creás una campaña: qué vendés, dónde
    buscar, sector/tamaño/palabras clave, cargos objetivo, cantidad máxima
    de empresas y umbral mínimo de score.
-2. **Cargá los criterios de "buen prospecto"** con su peso, desde la página
-   de la campaña.
-3. **Corré la campaña pidiéndoselo a Claude Code**, abierto en esta misma
-   carpeta (`claude` en la terminal, o Claude Code en tu editor). La web
-   **no** busca sola — no hay botón de "correr" que llame a ninguna API por
-   su cuenta, así no pagás nada aparte de tu plan de Claude. Pedile algo
-   como:
+2. Cargás los criterios de "buen prospecto" con su peso.
+3. **Me pedís acá en el chat** que corra la campaña. Yo investigo con
+   fuentes públicas reales, armo el score con evidencia citada, busco
+   contacto/email, y guardo todo directo en tu base Postgres con
+   `scripts/importRun.ts` — deduplicando por dominio, así no se repiten
+   empresas entre corridas.
+4. Refrescás tu URL de Vercel y ya está la tabla actualizada: Score,
+   Empresa, Ubicación, Motivo, Contacto, Email, Web. Entrás a cada empresa
+   para ver el desglose del score, evidencia, contacto y fuentes.
+5. Actualizás el estado de contacto a mano (nunca cambia solo).
+6. Exportás a CSV o Excel con los botones de la página.
 
-   > Corré la campaña "Nombre" (id 3): buscá hasta N empresas reales que
-   > matcheen la config, investigalas con fuentes públicas, puntualas según
-   > los criterios cargados (con evidencia y URL fuente para cada punto),
-   > buscá contacto y email, y guardá todo con `scripts/importRun.ts`.
+## Desarrollo local (opcional)
 
-   Claude Code hace la investigación real con su herramienta de búsqueda
-   web, arma un JSON con el resultado (ver formato abajo) y lo persiste
-   corriendo:
+Si en algún momento SÍ querés tocarlo vos:
 
-   ```bash
-   pnpm exec tsx scripts/importRun.ts payload.json
-   ```
-
-   El script deduplica automáticamente por dominio dentro de la campaña:
-   una empresa que ya está guardada no se vuelve a insertar en corridas
-   futuras.
-
-4. **Mirá la tabla de resultados** en la página de la campaña (Score,
-   Empresa, Ubicación, Motivo, Contacto, Email, Web, Estado) y entrá a
-   cada empresa para ver el desglose del score por criterio, la evidencia
-   citada, el contacto encontrado y las fuentes.
-5. **Actualizá el estado de contacto a mano** (nuevo / contactado /
-   respondió / descartado) desde el detalle de cada prospecto — nunca
-   cambia solo.
-6. **Exportá a CSV o Excel** con los botones de la página de la campaña.
+```bash
+pnpm install
+cp .env.example .env    # completá DATABASE_URL con el mismo Postgres
+pnpm dev                # http://localhost:3000
+```
 
 ## Formato de `payload.json` para `scripts/importRun.ts`
 
@@ -102,8 +95,7 @@ falta tocarlo para uso local.
 
 Regla dura: si un dato no se encontró (por ejemplo el email), va como
 `null` con su `*SourceUrl` vacío — nunca se inventa ni se adivina un
-patrón de email. `criterionId` tiene que existir en la campaña (se ve en
-la página de la campaña o consultando la tabla `Criterion`).
+patrón de email. `criterionId` tiene que existir en la campaña.
 
 ## Borradores de email (opcional, nunca se envían solos)
 
@@ -120,15 +112,13 @@ pnpm exec tsx scripts/addEmailDraft.ts draft.json
 }
 ```
 
-Con `"deliveryMethod": "eml"` se genera un archivo `.eml` en
-`exports/drafts/` que abrís con cualquier cliente de correo sin que se
-envíe. Con `"deliveryMethod": "outlook_draft"` (y `"outlookMessageId"`
-del borrador ya creado) se deja registrado que el borrador vive en tu
-Outlook — si tenés el conector de Microsoft 365 disponible en tu sesión
-de Claude Code, pedile que cree el borrador ahí directamente, sin
-necesidad de registrar una app en Azure AD.
+Con `"deliveryMethod": "eml"` se genera un archivo `.eml` que te paso por
+el chat, para que lo abras con cualquier cliente de correo sin que se
+envíe. Con `"deliveryMethod": "outlook_draft"` puedo crear el borrador
+directo en tu Outlook usando el conector de Microsoft 365, sin necesidad
+de registrar una app en Azure AD.
 
 ## Comandos útiles
 
-- `pnpm db:studio` — abre Prisma Studio para inspeccionar/editar la base a mano.
-- `pnpm build && pnpm start` — build de producción.
+- `pnpm exec prisma studio` — inspeccionar/editar la base a mano.
+- `pnpm build && pnpm start` — build de producción local.
