@@ -1,0 +1,64 @@
+{
+  "campaignId": 1,
+  "companiesFound": 1,
+  "companiesRejected": 0,
+  "notes": "Sexta corrida, tanda chica. lavorazionelamierasrl.it y servizimetalli.it no se pudieron verificar (desafío anti-bot o error de conexión intermitente).",
+  "prospects": [
+    {
+      "website": "https://www.osail.it/",
+      "companyName": "O.S.A.I.L.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "MI",
+      "city": "Milano",
+      "sector": "Lavorazione lamiere e carpenteria metallica leggera",
+      "companySizeEstimate": "Non confermato pubblicamente",
+      "score": 41,
+      "reasonSummary": "Officina specializzata in lavorazione lamiere conto terzi da oltre 40 anni, con taglio laser e punzonatura CNC: processi molto ripetitivi. Email trovata sul sito ma con un carattere anomalo (possibile offuscamento anti-bot), non usata perché non affidabile.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 8,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività (lavorazione conto terzi).",
+          "evidenceSourceUrl": "https://www.osail.it/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 3,
+          "evidenceText": "Numero di dipendenti non confermato pubblicamente; linguaggio del sito ('officina') suggerisce dimensione piccola.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica di digitalizzazione o automazione IT trovata.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 20,
+          "evidenceText": "Taglio laser, punzonatura CNC, piegatura, tranciatura, stampaggio a freddo, puntatura, saldatura e assemblaggio su progetto: catena di processi altamente ripetitivi e automatizzabili.",
+          "evidenceSourceUrl": "https://www.osail.it/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 10,
+          "evidenceText": "Telefono pubblico confermato (02.52.71.735); email trovata sul sito ma con un carattere non standard ('osail@łibero.it'), probabile offuscamento anti-spam — non utilizzata come dato affidabile.",
+          "evidenceSourceUrl": "https://www.osail.it/"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": null,
+        "emailSourceUrl": null,
+        "linkedinUrl": null,
+        "phone": "02.52.71.735",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.osail.it/", "title": "Sito ufficiale O.S.A.I.L. (pagina consultata direttamente)" }
+      ]
+    }
+  ]
+}
