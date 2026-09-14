@@ -40,7 +40,9 @@ export default async function CampaignPage({
     <div className="flex flex-col gap-8">
       <div className="flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <h1 className="text-xl font-semibold">{campaign.name}</h1>
+          <h1 className="text-xl font-semibold">
+            {campaign.name} <span className="badge">id {campaignId}</span>
+          </h1>
           <p className="text-sm mt-1" style={{ color: "var(--muted)" }}>
             {campaign.productTitle} ·{" "}
             {[campaign.city, campaign.province, campaign.region, campaign.country]
@@ -98,7 +100,8 @@ export default async function CampaignPage({
                 >
                   <div>
                     <p className="text-sm font-medium">
-                      {c.label} <span className="badge ml-1">peso {c.weight}</span>
+                      {c.label} <span className="badge ml-1">peso {c.weight}</span>{" "}
+                      <span className="badge ml-1">id {c.id}</span>
                     </p>
                     {c.description && (
                       <p className="text-xs mt-1" style={{ color: "var(--muted)" }}>
