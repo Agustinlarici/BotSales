@@ -1,0 +1,241 @@
+{
+  "campaignId": 1,
+  "companiesFound": 7,
+  "companiesRejected": 3,
+  "notes": "Prima corrida. Ricerca limitata a sole query di ricerca web (senza accesso diretto ai siti aziendali): dati verificabili solo tramite snippet di ricerca e registri camerali pubblici. Scartate: Calzaturificio Patrizia (Carpenedolo, BS) per dimensione fuori target (55 dipendenti); Ondulor S.r.l. per sede e dimensione fuori target (Oristano, >100 dipendenti); B.B. di Belleri e Borroni (Sarezzo, BS) per impossibilità di confermare pubblicamente il numero di dipendenti.",
+  "prospects": [
+    {
+      "website": "http://www.zielolino.it",
+      "companyName": "Officina Meccanica Zielo Cav. Lino S.r.l.",
+      "country": "Italia",
+      "region": "Veneto",
+      "province": "TV",
+      "city": "Colle Umberto",
+      "sector": "Meccanica di precisione — rullatura e bulloneria",
+      "companySizeEstimate": "20-49 dipendenti (registro camerale)",
+      "score": 60,
+      "reasonSummary": "Azienda familiare giunta alla terza generazione, specializzata nella rullatura di viti e bulloni: processi produttivi altamente ripetitivi e dimensione in linea con il target. Nessun segnale pubblico di investimenti recenti in digitalizzazione.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 12,
+          "evidenceText": "Nessuna evidenza diretta (annuncio di lavoro, notizia) di processi manuali/inefficienze; punteggio parziale basato sul tipo di lavorazione (rullatura), tipicamente a forte componente manuale nelle officine di queste dimensioni.",
+          "evidenceSourceUrl": "https://www.meccanicanews.com/2016/11/25/officina-meccanica-zielo-la-rullatura/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Registro camerale conferma 20-49 dipendenti, azienda attiva e non quotata.",
+          "evidenceSourceUrl": "https://www.ufficiocamerale.it/5010/officina-meccanica-zielo-cav-lino-srl"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica trovata di progetti di digitalizzazione, IT o automazione recenti.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Produzione di viti e bulloni tramite rullatura: processo altamente ripetitivo e standardizzabile, tipico candidato per automazione di controllo qualità e reportistica.",
+          "evidenceSourceUrl": "https://www.meccanicanews.com/2016/11/25/officina-meccanica-zielo-la-rullatura/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 15,
+          "evidenceText": "Identificato pubblicamente Alessandro Zielo come rappresentante della terza generazione familiare alla guida dell'azienda; non è stato possibile confermare un indirizzo email diretto.",
+          "evidenceSourceUrl": "https://www.meccanicanews.com/2016/11/25/officina-meccanica-zielo-la-rullatura/"
+        }
+      ],
+      "contact": {
+        "name": "Alessandro Zielo",
+        "role": "Titolare (terza generazione familiare)",
+        "email": null,
+        "emailSourceUrl": null,
+        "linkedinUrl": null,
+        "phone": "0438 430071",
+        "found": true
+      },
+      "sources": [
+        { "url": "http://www.zielolino.it", "title": "Sito ufficiale Officina Meccanica Zielo" },
+        { "url": "https://www.meccanicanews.com/2016/11/25/officina-meccanica-zielo-la-rullatura/", "title": "Officina Meccanica Zielo, la rullatura specializzata" },
+        { "url": "https://www.ufficiocamerale.it/5010/officina-meccanica-zielo-cav-lino-srl", "title": "Dati societari, dipendenti e fatturato" }
+      ]
+    },
+    {
+      "website": "https://www.ambroplast.it/it/",
+      "companyName": "Ambroplast S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "MI",
+      "city": "Albairate",
+      "sector": "Stampaggio a iniezione e costruzione stampi per materie plastiche",
+      "companySizeEstimate": "10-19 dipendenti (registro camerale)",
+      "score": 61,
+      "reasonSummary": "PMI di stampaggio plastico con amministratore identificabile pubblicamente e contatto email diretto; dimensione adeguata. Nessuna evidenza pubblica di iniziative di digitalizzazione recenti.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 10,
+          "evidenceText": "Nessuna evidenza diretta di inefficienze operative; punteggio parziale per il tipo di attività (stampaggio conto terzi con costruzione stampi), spesso associata a gestione manuale di cambio stampo e controllo qualità.",
+          "evidenceSourceUrl": "https://www.ambroplast.it/it/stampaggio"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Registro camerale/Impresa Italia indicano 10-19 dipendenti, fatturato stimato 2,5-5 milioni di euro.",
+          "evidenceSourceUrl": "https://www.ufficiocamerale.it/8993/ambroplast-srl"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica trovata di progetti di digitalizzazione o automazione IT recenti.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 16,
+          "evidenceText": "Stampaggio a iniezione (anche gas-assistito) e costruzione stampi: processi ciclici e ripetitivi, con prototipazione e produzione integrate.",
+          "evidenceSourceUrl": "https://www.ambroplast.it/it/azienda"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 20,
+          "evidenceText": "Amministratore identificato pubblicamente (Paolo Gerolamo Pedretti) con email aziendale diretta e telefono pubblicati sulla pagina contatti ufficiale.",
+          "evidenceSourceUrl": "https://www.ambroplast.it/it/contatti"
+        }
+      ],
+      "contact": {
+        "name": "Paolo Gerolamo Pedretti",
+        "role": "Amministratore",
+        "email": "info@ambroplast.it",
+        "emailSourceUrl": "https://www.ambroplast.it/it/contatti",
+        "linkedinUrl": null,
+        "phone": "02 94920302",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.ambroplast.it/it/", "title": "Sito ufficiale Ambroplast" },
+        { "url": "https://www.ambroplast.it/it/contatti", "title": "Pagina contatti" },
+        { "url": "https://www.ufficiocamerale.it/8993/ambroplast-srl", "title": "Dati societari e dipendenti" },
+        { "url": "https://www.federazionegommaplastica.it/en/aziende-associate/ambroplast-srl/", "title": "Scheda associativa Federazione Gomma Plastica" }
+      ]
+    },
+    {
+      "website": "https://unispecial.it/en/",
+      "companyName": "Unispecial S.r.l.",
+      "country": "Italia",
+      "region": "Veneto",
+      "province": "PD",
+      "city": "Vigodarzere",
+      "sector": "Torneria automatica CNC — lavorazioni meccaniche di precisione",
+      "companySizeEstimate": "25 dipendenti (dichiarati dal sito aziendale)",
+      "score": 65,
+      "reasonSummary": "Torneria a conduzione familiare con 25 dipendenti e 28 macchine CNC: altissima ripetitività dei processi produttivi, certificazione ISO 9001 con processi in aggiornamento costante. Contatto aziendale pubblico ma nessun nominativo individuale identificato.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 10,
+          "evidenceText": "Nessuna evidenza diretta di inefficienze operative pubblicata; punteggio parziale per il tipo di attività (torneria conto terzi ad alto volume).",
+          "evidenceSourceUrl": "https://unispecial.it/en/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Il sito aziendale dichiara un team di 25 persone su 1.950 mq.",
+          "evidenceSourceUrl": "https://unispecial.it/en/"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 8,
+          "evidenceText": "Certificazione ISO 9001 con processi descritti come 'costantemente aggiornati'; segnale debole/indiretto di attenzione all'innovazione dei processi, non specifico di IA o digitalizzazione.",
+          "evidenceSourceUrl": "https://unispecial.it/en/"
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 20,
+          "evidenceText": "Torneria automatica con 28 macchine CNC dedicate a lavorazioni di tornitura e fresatura conto terzi: processo produttivo massimamente ripetitivo e automatizzabile.",
+          "evidenceSourceUrl": "https://unispecial.it/en/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 12,
+          "evidenceText": "Email e telefono aziendali pubblicati sulla pagina contatti ufficiale; non è stato possibile identificare pubblicamente il nome del titolare o responsabile.",
+          "evidenceSourceUrl": "https://unispecial.it/en/contacts/"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": "unispecial@unispecial.it",
+        "emailSourceUrl": "https://unispecial.it/en/contacts/",
+        "linkedinUrl": null,
+        "phone": "+39 049 7671 15",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://unispecial.it/en/", "title": "Sito ufficiale Unispecial" },
+        { "url": "https://unispecial.it/en/contacts/", "title": "Pagina contatti" },
+        { "url": "https://www.ufficiocamerale.it/7658/unispecial-srl", "title": "Dati societari" }
+      ]
+    },
+    {
+      "website": "https://www.polbert.biz/",
+      "companyName": "Polbert S.r.l.",
+      "country": "Italia",
+      "region": "Emilia-Romagna",
+      "province": "BO",
+      "city": "San Lazzaro di Savena",
+      "sector": "Carpenteria meccanica e lavorazione lamiera per macchine automatiche",
+      "companySizeEstimate": "32 dipendenti (dichiarati dal sito aziendale)",
+      "score": 51,
+      "reasonSummary": "Carpenteria meccanica familiare attiva da oltre 30 anni, 32 dipendenti, specializzata in componenti in lamiera per macchine automatiche: processi ripetibili e dimensione adeguata. Nessun contatto individuale né segnale di digitalizzazione trovato pubblicamente — punteggio sopra soglia ma con evidenza più debole delle altre.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 10,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio parziale per il tipo di attività (carpenteria/lavorazione lamiera conto terzi).",
+          "evidenceSourceUrl": "https://www.polbert.biz/lavorazione-lamiera.php"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Il sito e le schede aziendali dichiarano 32 addetti su un'area di 3.000 mq, attiva da 30 anni.",
+          "evidenceSourceUrl": "https://www.paginebianche.it/scheda/san-lazzaro-di-savena/polbert-s-r-l-unipersonale_12909731"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica di progetti di digitalizzazione o automazione IT; unico segnale trovato riguarda un'adesione a una rete per la sostenibilità, non pertinente al criterio.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Lavorazioni meccaniche, carpenteria e particolari in lamiera destinati a macchine automatiche: produzione seriale e ripetitiva.",
+          "evidenceSourceUrl": "https://www.polbert.biz/settori"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 8,
+          "evidenceText": "Solo telefono aziendale pubblico trovato; nessun nominativo di titolare, responsabile produzione o HR identificato pubblicamente, né email diretta.",
+          "evidenceSourceUrl": "https://www.polbert.biz/contatti"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": null,
+        "emailSourceUrl": null,
+        "linkedinUrl": null,
+        "phone": "051 6255570",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.polbert.biz/", "title": "Sito ufficiale Polbert" },
+        { "url": "https://www.polbert.biz/contatti", "title": "Pagina contatti" },
+        { "url": "https://www.paginebianche.it/scheda/san-lazzaro-di-savena/polbert-s-r-l-unipersonale_12909731", "title": "Scheda aziendale Pagine Bianche" }
+      ]
+    }
+  ]
+}
