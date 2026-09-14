@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# base local (persistencia real en disco) y exports generados
+/data/*.db
+/data/*.db-journal
+/exports/*.csv
+/exports/*.xlsx
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -1,0 +1,134 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Campaign {
+  id                 Int      @id @default(autoincrement())
+  name               String   @unique
+  productTitle       String
+  productDescription String
+  country            String
+  region             String?
+  province           String?
+  city               String?
+  radiusKm           Int?
+  sector             String?
+  companySize        String?
+  keywords           String // comma-separated
+  targetRoles        String // comma-separated cargos objetivo
+  maxCompanies       Int      @default(20)
+  minScoreThreshold  Int      @default(0)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  criteria  Criterion[]
+  runs      Run[]
+  prospects Prospect[]
+}
+
+model Criterion {
+  id          Int      @id @default(autoincrement())
+  campaignId  Int
+  campaign    Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  label       String
+  description String?
+  weight      Int
+  createdAt   DateTime @default(now())
+
+  scores CriterionScore[]
+}
+
+model Run {
+  id                  Int       @id @default(autoincrement())
+  campaignId          Int
+  campaign            Campaign  @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  startedAt           DateTime  @default(now())
+  finishedAt          DateTime?
+  companiesFound      Int       @default(0)
+  companiesAdded      Int       @default(0)
+  companiesDuplicate  Int       @default(0)
+  companiesRejected   Int       @default(0)
+  status              String    @default("completed") // running | completed | failed
+  notes               String?
+
+  prospects Prospect[]
+}
+
+model Prospect {
+  id                  Int      @id @default(autoincrement())
+  campaignId          Int
+  campaign            Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  runId               Int
+  run                 Run      @relation(fields: [runId], references: [id])
+  domain              String // clave de dedup, normalizada (sin www, minúsculas)
+  companyName         String
+  website             String?
+  country             String?
+  region              String?
+  province            String?
+  city                String?
+  sector              String?
+  companySizeEstimate String?
+  score               Int
+  reasonSummary       String
+  contactStatus       String   @default("nuevo") // nuevo | contactado | respondio | descartado
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  criteriaScores CriterionScore[]
+  contacts       Contact[]
+  sources        Source[]
+  emailDrafts    EmailDraft[]
+
+  @@unique([campaignId, domain])
+}
+
+model CriterionScore {
+  id                Int       @id @default(autoincrement())
+  prospectId        Int
+  prospect          Prospect  @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+  criterionId       Int
+  criterion         Criterion @relation(fields: [criterionId], references: [id])
+  pointsAwarded     Int
+  evidenceText      String?
+  evidenceSourceUrl String?
+}
+
+model Contact {
+  id             Int      @id @default(autoincrement())
+  prospectId     Int
+  prospect       Prospect @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+  name           String?
+  role           String?
+  email          String?
+  emailSourceUrl String?
+  linkedinUrl    String?
+  phone          String?
+  found          Boolean  @default(false)
+}
+
+model Source {
+  id         Int      @id @default(autoincrement())
+  prospectId Int
+  prospect   Prospect @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+  url        String
+  title      String?
+  note       String?
+}
+
+model EmailDraft {
+  id               Int      @id @default(autoincrement())
+  prospectId       Int
+  prospect         Prospect @relation(fields: [prospectId], references: [id], onDelete: Cascade)
+  subject          String
+  body             String
+  createdAt        DateTime @default(now())
+  deliveryMethod   String // eml | outlook_draft
+  filePath         String?
+  outlookMessageId String?
+}
