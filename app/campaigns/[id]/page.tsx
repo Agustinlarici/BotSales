@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { addCriterion, deleteCriterion, deleteCampaign } from "@/lib/actions";
+import CopySummaryButton from "@/components/CopySummaryButton";
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +37,41 @@ export default async function CampaignPage({
   const boundAddCriterion = addCriterion.bind(null, campaignId);
   const boundDeleteCampaign = deleteCampaign.bind(null, campaignId);
 
+  const summaryText = `Campaña: ${campaign.name} (id ${campaignId})
+
+Qué vendo:
+- Producto/servicio: ${campaign.productTitle}
+- Descripción: ${campaign.productDescription}
+
+Dónde buscar:
+- País: ${campaign.country}
+- Región: ${campaign.region ?? "—"}
+- Provincia: ${campaign.province ?? "—"}
+- Ciudad: ${campaign.city ?? "—"}
+- Radio (km): ${campaign.radiusKm ?? "—"}
+
+Qué empresas:
+- Sector: ${campaign.sector ?? "—"}
+- Tamaño: ${campaign.companySize ?? "—"}
+- Palabras clave: ${campaign.keywords || "—"}
+
+Contacto objetivo (cargos): ${campaign.targetRoles || "—"}
+
+Límites:
+- Máx. empresas: ${campaign.maxCompanies}
+- Score mínimo: ${campaign.minScoreThreshold}
+
+Criterios (id · peso · etiqueta):
+${
+  campaign.criteria.length === 0
+    ? "(sin criterios cargados)"
+    : campaign.criteria
+        .map((c) => `- id ${c.id} · peso ${c.weight} · ${c.label}${c.description ? ` — ${c.description}` : ""}`)
+        .join("\n")
+}
+
+Corré esta campaña: buscá hasta ${campaign.maxCompanies} empresas reales que matcheen esto, investigalas con fuentes públicas, puntualas según estos criterios (con evidencia y URL fuente para cada punto), buscá contacto y email, y guardá los resultados en pending-runs/ con push.`;
+
   return (
     <div className="flex flex-col gap-8">
       <div className="flex items-start justify-between gap-4 flex-wrap">
@@ -69,12 +105,13 @@ export default async function CampaignPage({
       <section className="card flex flex-col gap-3">
         <h2 className="font-semibold">Cómo correr esta campaña</h2>
         <p className="text-sm" style={{ color: "var(--muted)" }}>
-          Esta app no busca sola. Pedile a Claude Code, corriendo local en tu
-          máquina en esta misma carpeta, algo como:
+          Esta app no busca sola. Copiá el resumen (botón abajo) y pegaselo a
+          Claude en el chat — ya trae todo lo que necesita: qué vendés,
+          dónde buscar y los criterios con su id.
         </p>
-        <code className="input" style={{ display: "block", whiteSpace: "pre-wrap" }}>
-          {`Corré la campaña "${campaign.name}" (id ${campaignId}): buscá hasta ${campaign.maxCompanies} empresas reales, investigalas, puntualas según los criterios configurados y guardá los resultados con scripts/importRun.ts.`}
-        </code>
+        <div>
+          <CopySummaryButton text={summaryText} />
+        </div>
       </section>
 
       <section className="card flex flex-col gap-4">
