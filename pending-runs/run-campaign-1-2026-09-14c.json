@@ -1,0 +1,179 @@
+{
+  "campaignId": 1,
+  "companiesFound": 3,
+  "companiesRejected": 0,
+  "notes": "Tercera corrida, score mínimo tratado como >20 según lo pedido (la campaña en la app todavía puede tener el umbral viejo hasta que se actualice el formulario). Meccanica Butera tiene un tamaño algo por debajo del rango declarado (8 empleados vs 10-50) -- se incluye igual con score bajo en ese criterio, no se descarta.",
+  "prospects": [
+    {
+      "website": "https://lombardinisrl.it/it/",
+      "companyName": "Lombardini S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "MI",
+      "city": "Corbetta",
+      "sector": "Estrusione e stampaggio di materie plastiche e gomma",
+      "companySizeEstimate": "20-49 dipendenti (registro camerale)",
+      "score": 59,
+      "reasonSummary": "Azienda storica (dal 1955) con officina meccanica interna e ufficio tecnico propri; management identificabile pubblicamente per nome, incluso il General Manager. Nessun segnale esplicito di digitalizzazione trovato.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 10,
+          "evidenceText": "Nessuna evidenza diretta di inefficienze; punteggio parziale per la presenza di un'officina meccanica interna tradizionale accanto alla produzione principale.",
+          "evidenceSourceUrl": "https://lombardinisrl.it/it/chi-siamo"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Registro camerale conferma 20-49 dipendenti dedicati alla produzione.",
+          "evidenceSourceUrl": "https://www.ufficiocamerale.it/5615/lombardini-srl"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica di progetti di digitalizzazione o automazione IT trovata.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Produzione di profili mono/co/tri-estrusi standard e personalizzati: processo produttivo seriale e ripetitivo.",
+          "evidenceSourceUrl": "https://lombardinisrl.it/it/chi-siamo"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 16,
+          "evidenceText": "Pagina 'Chi siamo' del sito elenca per nome il management: Ing. Lorenzo Lombardini (General Manager) e Anna Maria Stegani (Ufficio Amministrazione), tra altri. Email non recuperabile (protetta da script anti-spam), solo telefono pubblico.",
+          "evidenceSourceUrl": "https://lombardinisrl.it/it/chi-siamo"
+        }
+      ],
+      "contact": {
+        "name": "Ing. Lorenzo Lombardini",
+        "role": "General Manager",
+        "email": null,
+        "emailSourceUrl": null,
+        "linkedinUrl": null,
+        "phone": "+39 02 9721851",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://lombardinisrl.it/it/chi-siamo", "title": "Chi siamo — Lombardini (pagina consultata direttamente, incluye staff)" },
+        { "url": "https://lombardinisrl.it/it/contatti", "title": "Contatti" },
+        { "url": "https://www.ufficiocamerale.it/5615/lombardini-srl", "title": "Dati societari e dipendenti" }
+      ]
+    },
+    {
+      "website": "https://cmi-online.it/",
+      "companyName": "C.M.I. S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "VA",
+      "city": "Biandronno",
+      "sector": "Carpenteria metallica e impianti industriali",
+      "companySizeEstimate": "Non confermato pubblicamente (azienda attiva dal 1989)",
+      "score": 38,
+      "reasonSummary": "Carpenteria metallica attiva da oltre 30 anni con taglio laser e progettazione di impianti industriali; email aziendale pubblica diretta. Dimensione esatta non confermata pubblicamente, per questo il punteggio resta più basso.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 8,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività (carpenteria conto terzi).",
+          "evidenceSourceUrl": "https://cmi-online.it/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 0,
+          "evidenceText": "Non è stato possibile confermare pubblicamente il numero di dipendenti (pagina del registro camerale protetta da verifica anti-bot).",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica di digitalizzazione o automazione IT trovata.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 16,
+          "evidenceText": "Taglio laser (acciaio al carbonio fino a 20mm, inox 12mm, alluminio 10mm), carpenteria e impianti di movimentazione: lavorazioni seriali ripetibili.",
+          "evidenceSourceUrl": "https://cmi-online.it/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 14,
+          "evidenceText": "Email aziendale diretta pubblicata in homepage (info@cmi-online.it) con telefono; nessun nominativo individuale trovato.",
+          "evidenceSourceUrl": "https://cmi-online.it/"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": "info@cmi-online.it",
+        "emailSourceUrl": "https://cmi-online.it/",
+        "linkedinUrl": null,
+        "phone": "0332 766168",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://cmi-online.it/", "title": "Sito ufficiale CMI (pagina consultata direttamente)" }
+      ]
+    },
+    {
+      "website": "http://www.meccanicabutera.it",
+      "companyName": "Officina Meccanica Francesco Butera S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "VA",
+      "city": "Cadrezzate",
+      "sector": "Tranciatura, imbutitura e taglio laser metalli",
+      "companySizeEstimate": "Circa 8 dipendenti secondo fonte di settore — leggermente sotto il target di 10-50",
+      "score": 40,
+      "reasonSummary": "Azienda familiare da oltre 30 anni specializzata in tranciatura, imbutitura e taglio laser di metalli; dimensione leggermente inferiore al target dichiarato. Solo contatto PEC pubblico trovato, non un'email diretta né un nominativo.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 8,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.",
+          "evidenceSourceUrl": "https://www.rivistainnovare.com/whos-who-aziende/meccanica-butera/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 4,
+          "evidenceText": "Fonte di settore indica circa 8 dipendenti, leggermente sotto il range 10-50 dichiarato nella campagna; sito ufficiale non raggiungibile per conferma diretta.",
+          "evidenceSourceUrl": "https://www.rivistainnovare.com/whos-who-aziende/meccanica-butera/"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica di digitalizzazione o automazione IT trovata.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 16,
+          "evidenceText": "Tranciatura, imbutitura, taglio laser conto terzi e carpenteria: processi seriali e ripetitivi.",
+          "evidenceSourceUrl": "https://www.misterimprese.it/lombardia/varese/cadrezzate/tranciatura-metalli/251493.html"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 12,
+          "evidenceText": "Indirizzo PEC pubblico trovato (mebusrls@legalmail.it) con telefono; nessun nominativo individuale identificato pubblicamente.",
+          "evidenceSourceUrl": "https://www.rivistainnovare.com/whos-who-aziende/meccanica-butera/"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": "mebusrls@legalmail.it",
+        "emailSourceUrl": "https://www.rivistainnovare.com/whos-who-aziende/meccanica-butera/",
+        "linkedinUrl": null,
+        "phone": "0331 953511",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.rivistainnovare.com/whos-who-aziende/meccanica-butera/", "title": "Scheda aziendale Innovare" },
+        { "url": "https://www.misterimprese.it/lombardia/varese/cadrezzate/tranciatura-metalli/251493.html", "title": "Scheda MisterImprese" }
+      ]
+    }
+  ]
+}
