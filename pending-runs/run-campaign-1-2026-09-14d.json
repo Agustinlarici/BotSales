@@ -1,0 +1,65 @@
+{
+  "campaignId": 1,
+  "companiesFound": 1,
+  "companiesRejected": 0,
+  "notes": "Cuarta corrida, tanda chica. Ghepi y Tedeschi Gomma se descartaron: la primera no tiene la URL indexada correctamente (404), la segunda tiene un certificado SSL inválido que impide verificar el sitio de forma segura.",
+  "prospects": [
+    {
+      "website": "https://www.atig.it/",
+      "companyName": "ATIG S.r.l.",
+      "country": "Italia",
+      "region": "Emilia-Romagna",
+      "province": "PR",
+      "city": "Parma",
+      "sector": "Articoli tecnici industriali in gomma (nastri, cinghie, rivestimenti)",
+      "companySizeEstimate": "Non confermato pubblicamente (fatturato 1,5-3 milioni di euro nel 2024, attiva da oltre 50 anni)",
+      "score": 33,
+      "reasonSummary": "Produttore di articoli tecnici in gomma attivo da oltre 50 anni, con lavorazioni su misura. Non è stato possibile confermare né il numero di dipendenti né un'email diretta: solo telefono pubblico trovato.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 8,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività (lavorazioni su misura conto terzi).",
+          "evidenceSourceUrl": "https://www.atig.it/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 4,
+          "evidenceText": "Numero di dipendenti non confermato pubblicamente; fatturato 2024 tra 1,5 e 3 milioni di euro, compatibile con una PMI piccola.",
+          "evidenceSourceUrl": "https://www.misterimprese.it/emilia-romagna/parma/parma/gomma-articoli-tecnici-produzione-e-commercio/977482.html"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica di digitalizzazione o automazione IT trovata.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 15,
+          "evidenceText": "Taglio, tranciatura, foratura di particolari a disegno e rivestimenti su nastri/cinghie: lavorazioni ripetibili su commessa.",
+          "evidenceSourceUrl": "https://www.atig.it/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 6,
+          "evidenceText": "Solo telefono aziendale pubblico trovato; nessuna email diretta né nominativo individuale identificato.",
+          "evidenceSourceUrl": "https://www.misterimprese.it/emilia-romagna/parma/parma/gomma-articoli-tecnici-produzione-e-commercio/977482.html"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": null,
+        "emailSourceUrl": null,
+        "linkedinUrl": null,
+        "phone": "0521 1960150",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.atig.it/", "title": "Sito ufficiale ATIG (pagina consultata direttamente)" },
+        { "url": "https://www.misterimprese.it/emilia-romagna/parma/parma/gomma-articoli-tecnici-produzione-e-commercio/977482.html", "title": "Scheda aziendale MisterImprese" }
+      ]
+    }
+  ]
+}
