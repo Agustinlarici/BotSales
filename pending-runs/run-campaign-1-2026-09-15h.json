@@ -1,0 +1,39 @@
+{
+  "campaignId": 1,
+  "companiesFound": 2,
+  "companiesRejected": 1,
+  "notes": "Decimocuarta corrida. Descartada: OMAT Srl -- existen varias entidades con el mismo nombre en el registro camerale y no se pudo confirmar cuál corresponde exactamente al sitio web ni sus datos de empleados.",
+  "prospects": [
+    {
+      "website": "https://www.torneriebrema.it/",
+      "companyName": "Brema S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "BG",
+      "city": "Fara Gera d'Adda",
+      "sector": "Officina meccanica di precisione conto terzi (minuteria metallica)",
+      "companySizeEstimate": "10-19 dipendenti (registro camerale)",
+      "score": 67,
+      "reasonSummary": "Officina meccanica di precisione con dimensione confermata nel range target; il sito dedica una sezione propria al tema 'Industria 4.0', segnale di posizionamento attorno alla tecnologia. Email diretta pubblica trovata.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 8, "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.", "evidenceSourceUrl": "https://www.torneriebrema.it/" },
+        { "criterionId": 2, "pointsAwarded": 15, "evidenceText": "Registro camerale conferma 10-19 dipendenti.", "evidenceSourceUrl": "https://www.ufficiocamerale.it/5793/brema-srl" },
+        { "criterionId": 3, "pointsAwarded": 12, "evidenceText": "Il sito ha una sezione di navigazione dedicata a 'Industria 4.0' e 'Tecnologia e innovazione'; non è stato possibile caricare il contenuto specifico della pagina per confermare i dettagli.", "evidenceSourceUrl": "https://www.torneriebrema.it/" },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Lavorazione per asportazione di truciolo di minuteria metallica: processo altamente ripetitivo e seriale.", "evidenceSourceUrl": "https://www.torneriebrema.it/officina-meccanica-di-precisione-fara-gera-adda-bergamo/" },
+        { "criterionId": 5, "pointsAwarded": 14, "evidenceText": "Email aziendale diretta pubblica (info@torneriebrema.it) con telefono; nessun nominativo individuale trovato.", "evidenceSourceUrl": "https://www.torneriebrema.it/contatti/" }
+      ],
+      "contact": {
+        "name": null, "role": null,
+        "email": "info@torneriebrema.it",
+        "emailSourceUrl": "https://www.torneriebrema.it/contatti/",
+        "linkedinUrl": null,
+        "phone": "+39 0363 396296",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.torneriebrema.it/", "title": "Sito ufficiale Brema (pagina consultata direttamente)" },
+        { "url": "https://www.ufficiocamerale.it/5793/brema-srl", "title": "Dati societari e dipendenti" }
+      ]
+    }
+  ]
+}
