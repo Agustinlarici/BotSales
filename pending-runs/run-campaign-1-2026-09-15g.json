@@ -1,0 +1,39 @@
+{
+  "campaignId": 1,
+  "companiesFound": 1,
+  "companiesRejected": 0,
+  "notes": "Decimotercera corrida.",
+  "prospects": [
+    {
+      "website": "https://www.elettra-cablaggi.it/",
+      "companyName": "Elettra S.r.l.",
+      "country": "Italia",
+      "region": "Veneto",
+      "province": "TV",
+      "city": "Vittorio Veneto",
+      "sector": "Cablaggi elettrici industriali e quadri elettrici",
+      "companySizeEstimate": "Non confermato con certezza (esistono varie registrazioni con nome simile nella stessa zona)",
+      "score": 67,
+      "reasonSummary": "Produttore di cablaggi e quadri elettrici da oltre 30 anni con segnali molto concreti di automazione: magazzino automatico, controllo informatizzato della produzione e macchinari Komax all'avanguardia. Email diretta pubblica trovata.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 10, "evidenceText": "Il sito descrive una recente riorganizzazione degli spazi e introduzione di automazione nella gestione materiali, suggerendo processi precedentemente meno efficienti.", "evidenceSourceUrl": "https://www.elettra-cablaggi.it/azienda/" },
+        { "criterionId": 2, "pointsAwarded": 3, "evidenceText": "Numero di dipendenti non confermato con certezza pubblicamente.", "evidenceSourceUrl": null },
+        { "criterionId": 3, "pointsAwarded": 20, "evidenceText": "Testo esplicito dell'azienda: 'magazzino automatico', 'controllo informatizzato della produzione', macchinari Komax (leader mondiale automazione cablaggi) all'avanguardia.", "evidenceSourceUrl": "https://www.elettra-cablaggi.it/azienda/" },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Cablaggi e assemblaggi elettrici su grandi e piccole tirature, con processo di fabbricazione ripetitivo dopo l'industrializzazione iniziale del prodotto.", "evidenceSourceUrl": "https://www.elettra-cablaggi.it/azienda/" },
+        { "criterionId": 5, "pointsAwarded": 16, "evidenceText": "Email aziendale diretta pubblica (info@elettra-cablaggi.it) con telefono; nessun nominativo individuale trovato.", "evidenceSourceUrl": "https://www.elettra-cablaggi.it/contatti/" }
+      ],
+      "contact": {
+        "name": null, "role": null,
+        "email": "info@elettra-cablaggi.it",
+        "emailSourceUrl": "https://www.elettra-cablaggi.it/contatti/",
+        "linkedinUrl": null,
+        "phone": "+39 0438 912529",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.elettra-cablaggi.it/azienda/", "title": "Azienda — Elettra (pagina consultata direttamente)" },
+        { "url": "https://www.elettra-cablaggi.it/contatti/", "title": "Contatti" }
+      ]
+    }
+  ]
+}
