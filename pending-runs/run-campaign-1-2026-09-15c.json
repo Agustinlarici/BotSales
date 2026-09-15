@@ -1,0 +1,65 @@
+{
+  "campaignId": 1,
+  "companiesFound": 2,
+  "companiesRejected": 1,
+  "notes": "Novena corrida. Descartada: GalvanoTechnik S.p.A. (Gardone Val Trompia, BS) -- 50-99 empleados según registro camerale, fuera del rango declarado (10-50).",
+  "prospects": [
+    {
+      "website": "https://www.evolani.com/",
+      "companyName": "Evolani Germino S.r.l.",
+      "country": "Italia",
+      "region": "Veneto",
+      "province": "VI",
+      "city": "Thiene",
+      "sector": "Trattamenti galvanici e rivestimento metalli (cromatura, nichelatura)",
+      "companySizeEstimate": "22 dipendenti (fonte di settore)",
+      "score": 59,
+      "reasonSummary": "Azienda familiare dal 1980 specializzata in trattamenti galvanici su metalli, con amministratore identificato per nome e contatto email diretto che sembra personale. Nessun segnale di digitalizzazione trovato.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 8,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività (trattamenti conto terzi).",
+          "evidenceSourceUrl": "https://www.evolani.com/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Fonte di settore conferma 22 dipendenti.",
+          "evidenceSourceUrl": "https://atoka.io/public/it/azienda/evolani-germino-srl/6819aff35442"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 0,
+          "evidenceText": "Nessuna menzione pubblica di digitalizzazione o automazione IT trovata.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 16,
+          "evidenceText": "Cromatura, nichelatura, ramatura e brillantatura inox: trattamenti a bagno seriali e ripetibili su lotti di pezzi.",
+          "evidenceSourceUrl": "https://www.evolani.com/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 20,
+          "evidenceText": "Amministratore identificato per nome (Silvano Evolani, cognome dell'azienda stessa) con email diretta che sembra a lui riconducibile (sevolani@evolani.com) e telefono pubblico.",
+          "evidenceSourceUrl": "https://www.evolani.com/"
+        }
+      ],
+      "contact": {
+        "name": "Silvano Evolani",
+        "role": "Amministratore",
+        "email": "sevolani@evolani.com",
+        "emailSourceUrl": "https://www.evolani.com/",
+        "linkedinUrl": null,
+        "phone": "+39 0445 361617",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.evolani.com/", "title": "Sito ufficiale Evolani Germino" },
+        { "url": "https://atoka.io/public/it/azienda/evolani-germino-srl/6819aff35442", "title": "Dati societari e dipendenti" }
+      ]
+    }
+  ]
+}
