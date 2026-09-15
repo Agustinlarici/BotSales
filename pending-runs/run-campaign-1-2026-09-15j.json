@@ -1,0 +1,29 @@
+{
+  "campaignId": 1,
+  "companiesFound": 1,
+  "companiesRejected": 0,
+  "notes": "Decimosexta corrida.",
+  "prospects": [
+    {
+      "website": "https://www.besozziplast.it/",
+      "companyName": "F.lli Besozzi S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "VA",
+      "city": "Sesto Calende",
+      "sector": "Costruzione stampi e stampaggio materie plastiche conto terzi",
+      "companySizeEstimate": "Non confermato pubblicamente",
+      "score": 37,
+      "reasonSummary": "Azienda familiare dal 1960 (oggi con la seconda generazione già coinvolta nella gestione) specializzata in stampaggio plastico conto terzi. Email presente sul sito ma offuscata da un plugin anti-spam e non recuperabile in modo affidabile; solo telefono utilizzabile.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 8, "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.", "evidenceSourceUrl": "https://www.besozziplast.it/" },
+        { "criterionId": 2, "pointsAwarded": 3, "evidenceText": "Numero di dipendenti non confermato pubblicamente.", "evidenceSourceUrl": null },
+        { "criterionId": 3, "pointsAwarded": 0, "evidenceText": "Nessuna menzione pubblica di digitalizzazione trovata.", "evidenceSourceUrl": null },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Costruzione stampi e stampaggio materie plastiche conto terzi per giocattoli e articoli tecnici: processo produttivo seriale.", "evidenceSourceUrl": "https://www.besozziplast.it/" },
+        { "criterionId": 5, "pointsAwarded": 8, "evidenceText": "Il sito conferma che i figli dei fondatori sono oggi coinvolti nella gestione, ma nessun nome è pubblicato; l'email visibile sul sito è offuscata da un plugin anti-spam e non è affidabile.", "evidenceSourceUrl": "https://www.besozziplast.it/" }
+      ],
+      "contact": { "name": null, "role": null, "email": null, "emailSourceUrl": null, "linkedinUrl": null, "phone": "0331.924644", "found": true },
+      "sources": [{ "url": "https://www.besozziplast.it/", "title": "Sito ufficiale F.lli Besozzi (pagina consultata direttamente)" }]
+    }
+  ]
+}
