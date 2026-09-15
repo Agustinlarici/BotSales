@@ -1,0 +1,123 @@
+{
+  "campaignId": 1,
+  "companiesFound": 3,
+  "companiesRejected": 1,
+  "notes": "Octava corrida. Descartada: Elettromeccanica Ciaurri -- el sitio tiene una dirección placeholder sin corregir ('Chicago, Melborne City, USA') y el prefijo telefónico (099) corresponde a Taranto, Puglia (sur de Italia), fuera de la región objetivo; datos no confiables.",
+  "prospects": [
+    {
+      "website": "https://www.rainoldilegnami.com/",
+      "companyName": "Rainoldi Legnami S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "SO",
+      "city": "Castione Andevenno",
+      "sector": "Segheria, carpenteria e lavorazione del legno",
+      "companySizeEstimate": "11-50 dipendenti (circa 15 secondo varie fonti)",
+      "score": 73,
+      "reasonSummary": "Azienda familiare di terza generazione (dal 1935) che si autodefinisce pubblicamente 'azienda del legno 4.0' con macchinari a controllo numerico: segnale esplicito e diretto di orientamento all'innovazione tecnologica. Email diretta pubblica trovata.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 10,
+          "evidenceText": "Il sito racconta il passaggio storico da attività artigianale (segagione manuale) a industria, suggerendo processi tradizionalmente manuali oggi in fase di automazione.",
+          "evidenceSourceUrl": "https://www.rainoldilegnami.com/azienda/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Fonti pubbliche (LinkedIn, registro camerale) confermano 11-50 dipendenti, circa 15 secondo alcune fonti.",
+          "evidenceSourceUrl": "https://www.ufficiocamerale.it/8611/rainoldi-legnami-srl"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 20,
+          "evidenceText": "Testo esplicito dell'azienda: 'diventare oggi un'impresa del legno innovativa e moderna, fortemente orientata in ottica 4.0 con macchinari a controllo numerico'.",
+          "evidenceSourceUrl": "https://www.rainoldilegnami.com/azienda/"
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 16,
+          "evidenceText": "Segagione, piallatura e carpenteria in legno massiccio e lamellare per tetti e strutture: produzione seriale ripetibile.",
+          "evidenceSourceUrl": "https://www.rainoldilegnami.com/azienda/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 12,
+          "evidenceText": "Email aziendale diretta pubblicata (info@rainoldilegnami.com) con telefono; fondatore storico noto (Francesco Rainoldi) ma nessun nominativo dell'attuale gestione trovato.",
+          "evidenceSourceUrl": "https://www.rainoldilegnami.com/azienda/"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": "info@rainoldilegnami.com",
+        "emailSourceUrl": "https://www.rainoldilegnami.com/azienda/",
+        "linkedinUrl": null,
+        "phone": "+39 0342 358087",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.rainoldilegnami.com/azienda/", "title": "Azienda — Rainoldi Legnami (pagina consultata direttamente)" },
+        { "url": "https://www.ufficiocamerale.it/8611/rainoldi-legnami-srl", "title": "Dati societari e dipendenti" }
+      ]
+    },
+    {
+      "website": "https://www.laquadri.eu/",
+      "companyName": "La Quadri di Barbara Scarimbolo",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "BS",
+      "city": "Brescia",
+      "sector": "Progettazione e costruzione di quadri elettrici industriali",
+      "companySizeEstimate": "Circa 15 dipendenti su 1.300 mq (fonti di settore)",
+      "score": 81,
+      "reasonSummary": "Costruttore di quadri elettrici industriali con titolare identificata per nome, magazzini verticali automatizzati (Modula) e gestionale aziendale per la produzione: segnali concreti di investimento in automazione operativa. Email e contatto diretto trovati.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 10,
+          "evidenceText": "Nessuna evidenza diretta di inefficienze; il sito enfatizza però un processo 'sartoriale' non standardizzato, che suggerisce margine per automazione di attività di supporto (amministrazione, tracciabilità).",
+          "evidenceSourceUrl": "https://www.laquadri.eu/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 15,
+          "evidenceText": "Fonti di settore confermano circa 15 dipendenti su una struttura di 1.300 mq.",
+          "evidenceSourceUrl": "https://www.icribis.com/it/scheda-azienda/BS551928_la-quadri-di-scarimbolo-barbara"
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 18,
+          "evidenceText": "Il sito descrive magazzini verticali automatizzati (sistema Modula) e un gestionale aziendale che coordina materiali e avanzamento produzione: investimenti concreti in automazione, anche se non descritti esplicitamente come 'digitalizzazione' o 'IA'.",
+          "evidenceSourceUrl": "https://www.laquadri.eu/"
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Cablaggio, assemblaggio e collaudo di quadri elettrici seguendo uno schema costruttivo standardizzato (CEI EN IEC 61439): processo produttivo seriale con controllo qualità ripetibile.",
+          "evidenceSourceUrl": "https://www.laquadri.eu/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 20,
+          "evidenceText": "Titolare identificata per nome pubblicamente (Barbara Scarimbolo, confermata anche su LinkedIn come 'Titolare dell'azienda'), con email diretta e telefono pubblici.",
+          "evidenceSourceUrl": "https://it.linkedin.com/in/barbara-scarimbolo-80749820b"
+        }
+      ],
+      "contact": {
+        "name": "Barbara Scarimbolo",
+        "role": "Titolare",
+        "email": "info@laquadri.it",
+        "emailSourceUrl": "https://www.icribis.com/it/scheda-azienda/BS551928_la-quadri-di-scarimbolo-barbara",
+        "linkedinUrl": "https://it.linkedin.com/in/barbara-scarimbolo-80749820b",
+        "phone": "030-5032645",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.laquadri.eu/", "title": "Sito ufficiale La Quadri (pagina consultata direttamente)" },
+        { "url": "https://www.icribis.com/it/scheda-azienda/BS551928_la-quadri-di-scarimbolo-barbara", "title": "Scheda aziendale iCRIBIS" },
+        { "url": "https://it.linkedin.com/in/barbara-scarimbolo-80749820b", "title": "Profilo LinkedIn della titolare" }
+      ]
+    }
+  ]
+}
