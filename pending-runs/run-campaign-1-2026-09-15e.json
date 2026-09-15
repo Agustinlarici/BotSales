@@ -1,0 +1,36 @@
+{
+  "campaignId": 1,
+  "companiesFound": 3,
+  "companiesRejected": 2,
+  "notes": "Undécima corrida. Descartadas: Pirovano Luigi (2-5 empleados, muy por debajo del rango) y Eurofiltri Group (5-9 empleados, por debajo del rango) -- ambas además sin email directo encontrado.",
+  "prospects": [
+    {
+      "website": "https://www.macomcarpenteriameccanica.com/",
+      "companyName": "MACOM Carpenteria Meccanica S.r.l.",
+      "country": "Italia",
+      "region": "Emilia-Romagna",
+      "province": "PC",
+      "city": "Alseno / Pontenure (Piacenza)",
+      "sector": "Carpenteria meccanica e metallica (acciaio, inox, alluminio)",
+      "companySizeEstimate": "Non confermato pubblicamente",
+      "score": 45,
+      "reasonSummary": "Carpenteria meccanica certificata EN con fondatore identificato per nome; lavorazioni di taglio, saldatura e piegatura certificate. Dimensione non confermata, nessuna email diretta trovata.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 8, "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.", "evidenceSourceUrl": "https://www.macomcarpenteriameccanica.com/" },
+        { "criterionId": 2, "pointsAwarded": 3, "evidenceText": "Numero di dipendenti non confermato pubblicamente.", "evidenceSourceUrl": null },
+        { "criterionId": 3, "pointsAwarded": 0, "evidenceText": "Nessuna menzione pubblica di digitalizzazione trovata.", "evidenceSourceUrl": null },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Taglio con segatrice a nastro, foratura/maschiatura, saldatura MAG/TIG certificata, taglio laser e piegatura: catena di processi seriali certificati EN.", "evidenceSourceUrl": "https://www.macomcarpenteriameccanica.com/" },
+        { "criterionId": 5, "pointsAwarded": 16, "evidenceText": "Fondatore/titolare identificato pubblicamente (Andrea Mazzoni) con telefono pubblico; nessuna email diretta trovata.", "evidenceSourceUrl": "https://www.macomcarpenteriameccanica.com/" }
+      ],
+      "contact": {
+        "name": "Andrea Mazzoni", "role": "Fondatore/Titolare",
+        "email": null, "emailSourceUrl": null, "linkedinUrl": null,
+        "phone": "+39 0523947553",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.macomcarpenteriameccanica.com/", "title": "Sito ufficiale MACOM (pagina consultata direttamente)" }
+      ]
+    }
+  ]
+}
