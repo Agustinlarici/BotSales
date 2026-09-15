@@ -1,0 +1,39 @@
+{
+  "campaignId": 1,
+  "companiesFound": 1,
+  "companiesRejected": 0,
+  "notes": "Decima corrida. Malhi Italia (Bergamo) no se pudo verificar por protección anti-bot.",
+  "prospects": [
+    {
+      "website": "https://www.ferramentavenetasrl.com/",
+      "companyName": "Ferramenta Veneta S.r.l.",
+      "country": "Italia",
+      "region": "Veneto",
+      "province": "TV",
+      "city": "Zero Branco",
+      "sector": "Produzione e commercio di viteria, bulloneria e minuteria metallica",
+      "companySizeEstimate": "6-9 dipendenti (registro camerale) — sotto il target di 10-50",
+      "score": 42,
+      "reasonSummary": "Produttore di viteria e minuteria metallica (tranciati, stampati, pressofusi, torniti) attivo da oltre 20 anni; email aziendale diretta pubblica. Dimensione sotto il range dichiarato.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 8, "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.", "evidenceSourceUrl": "https://www.ferramentavenetasrl.com/" },
+        { "criterionId": 2, "pointsAwarded": 2, "evidenceText": "Registro camerale indica 6-9 dipendenti, sotto il range 10-50 della campagna.", "evidenceSourceUrl": "https://www.ufficiocamerale.it/6394/ferramenta-veneta-srl" },
+        { "criterionId": 3, "pointsAwarded": 0, "evidenceText": "Nessuna menzione pubblica di digitalizzazione trovata.", "evidenceSourceUrl": null },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Produzione di particolari a disegno (tranciati, stampati, pressofusi, torniti, filettature): processi seriali molto ripetitivi.", "evidenceSourceUrl": "https://www.ferramentavenetasrl.com/" },
+        { "criterionId": 5, "pointsAwarded": 14, "evidenceText": "Email aziendale diretta pubblica (info@ferramentavenetasrl.com) con telefono; nessun nominativo individuale trovato.", "evidenceSourceUrl": "https://www.ferramentavenetasrl.com/" }
+      ],
+      "contact": {
+        "name": null, "role": null,
+        "email": "info@ferramentavenetasrl.com",
+        "emailSourceUrl": "https://www.ferramentavenetasrl.com/",
+        "linkedinUrl": null,
+        "phone": "+39 0422 488108",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.ferramentavenetasrl.com/", "title": "Sito ufficiale Ferramenta Veneta (pagina consultata direttamente)" },
+        { "url": "https://www.ufficiocamerale.it/6394/ferramenta-veneta-srl", "title": "Dati societari e dipendenti" }
+      ]
+    }
+  ]
+}
