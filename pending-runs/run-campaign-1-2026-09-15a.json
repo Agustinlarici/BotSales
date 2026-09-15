@@ -1,0 +1,120 @@
+{
+  "campaignId": 1,
+  "companiesFound": 2,
+  "companiesRejected": 0,
+  "notes": "Séptima corrida. OMI Srl (Empoli) y Statmec (Veneto) no cargaron contenido completo en sus páginas de contacto/chi-siamo (probablemente renderizado por JS) -- quedan pendientes para una próxima tanda.",
+  "prospects": [
+    {
+      "website": "https://www.zetastampi.it/",
+      "companyName": "Zeta Stampi",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "BS",
+      "city": "Provincia di Brescia",
+      "sector": "Costruzione stampi e stampaggio a iniezione di materie plastiche",
+      "companySizeEstimate": "Non confermato pubblicamente",
+      "score": 57,
+      "reasonSummary": "Costruttore di stampi per plastica dal 1962, con progettazione CAD/CAM 3D e prototipazione per stereolitografia; email aziendale diretta pubblicata. Dimensione non confermata.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 8,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività (costruzione stampi su commessa).",
+          "evidenceSourceUrl": "https://www.zetastampi.it/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 3,
+          "evidenceText": "Numero di dipendenti non confermato pubblicamente.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 10,
+          "evidenceText": "Il sito dichiara l'uso di software di progettazione 3D (VISI CAD/CAM) e sistemi di prototipazione dedicati (stereolitografia): segnale moderato di adozione tecnologica, anche se non specifico di digitalizzazione IT/IA.",
+          "evidenceSourceUrl": "https://www.zetastampi.it/"
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Costruzione stampi a iniezione per polimeri e stampaggio in serie (garantito per 500.000 battute): processo altamente seriale e ripetitivo.",
+          "evidenceSourceUrl": "https://www.zetastampi.it/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 18,
+          "evidenceText": "Email aziendale diretta pubblicata in homepage (zeta1@zetastampi.it) con telefono; nessun nominativo individuale trovato.",
+          "evidenceSourceUrl": "https://www.zetastampi.it/"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": "zeta1@zetastampi.it",
+        "emailSourceUrl": "https://www.zetastampi.it/",
+        "linkedinUrl": null,
+        "phone": "+39 030 275 1107",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.zetastampi.it/", "title": "Sito ufficiale Zeta Stampi (pagina consultata direttamente)" }
+      ]
+    },
+    {
+      "website": "https://www.pdstampi.it/",
+      "companyName": "PD Stampi",
+      "country": "Italia",
+      "region": "Veneto",
+      "province": "PD",
+      "city": "Padova (area)",
+      "sector": "Progettazione e costruzione stampi in acciaio per iniezione termoplastica",
+      "companySizeEstimate": "Non confermato pubblicamente",
+      "score": 43,
+      "reasonSummary": "Costruttore di stampi per iniezione termoplastica attivo nell'area di Venezia, Padova, Treviso e Vicenza, con ufficio tecnico che usa software CAD-CAM. Solo telefono pubblico trovato, senza email diretta.",
+      "criteriaScores": [
+        {
+          "criterionId": 1,
+          "pointsAwarded": 8,
+          "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.",
+          "evidenceSourceUrl": "https://www.pdstampi.it/"
+        },
+        {
+          "criterionId": 2,
+          "pointsAwarded": 3,
+          "evidenceText": "Numero di dipendenti non confermato pubblicamente.",
+          "evidenceSourceUrl": null
+        },
+        {
+          "criterionId": 3,
+          "pointsAwarded": 8,
+          "evidenceText": "Ufficio tecnico che utilizza software di progettazione CAD-CAM: segnale moderato di adozione tecnologica.",
+          "evidenceSourceUrl": "https://www.pdstampi.it/"
+        },
+        {
+          "criterionId": 4,
+          "pointsAwarded": 18,
+          "evidenceText": "Progettazione, costruzione, fresatura, elettroerosione, assemblaggio e collaudo di stampi: catena di processi seriali e ripetibili.",
+          "evidenceSourceUrl": "https://www.pdstampi.it/"
+        },
+        {
+          "criterionId": 5,
+          "pointsAwarded": 6,
+          "evidenceText": "Solo telefono pubblico trovato (049 5743025); nessuna email diretta né nominativo individuale identificato.",
+          "evidenceSourceUrl": "https://www.pdstampi.it/"
+        }
+      ],
+      "contact": {
+        "name": null,
+        "role": null,
+        "email": null,
+        "emailSourceUrl": null,
+        "linkedinUrl": null,
+        "phone": "049 5743025",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.pdstampi.it/", "title": "Sito ufficiale PD Stampi (pagina consultata direttamente)" }
+      ]
+    }
+  ]
+}
