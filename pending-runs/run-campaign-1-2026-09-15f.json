@@ -1,0 +1,38 @@
+{
+  "campaignId": 1,
+  "companiesFound": 2,
+  "companiesRejected": 1,
+  "notes": "Duodécima corrida. Descartada: Chima Srl -- existen múltiples empresas con nombre idéntico en el registro camerale y no se pudo confirmar con certeza cuál corresponde al sitio web, ni el número de empleados; se prefiere descartar antes que adivinar.",
+  "prospects": [
+    {
+      "website": "https://www.fargoitalia.com/",
+      "companyName": "Fargo S.r.l. (Fargo Italia)",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "VA",
+      "city": "Cassano Magnago",
+      "sector": "Termoformatura sottovuoto e lavorazione materie plastiche (food, medicale)",
+      "companySizeEstimate": "Non confermato pubblicamente",
+      "score": 43,
+      "reasonSummary": "Azienda di termoformatura da lastra e bobina per i settori alimentare e medicale, con oltre vent'anni di esperienza; email funzionali dirette pubblicate. Dimensione non confermata.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 8, "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.", "evidenceSourceUrl": "https://www.fargoitalia.com/" },
+        { "criterionId": 2, "pointsAwarded": 3, "evidenceText": "Numero di dipendenti non confermato pubblicamente.", "evidenceSourceUrl": null },
+        { "criterionId": 3, "pointsAwarded": 0, "evidenceText": "Nessuna menzione pubblica di digitalizzazione trovata.", "evidenceSourceUrl": null },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Termoformatura sottovuoto da lastra e da bobina per settori alimentare e medicale: processo produttivo altamente seriale.", "evidenceSourceUrl": "https://www.fargoitalia.com/" },
+        { "criterionId": 5, "pointsAwarded": 14, "evidenceText": "Email funzionali dirette pubblicate (area.clienti@fargoitalia.com, area.fornitori@fargoitalia.com) con telefono; nessun nominativo individuale trovato.", "evidenceSourceUrl": "https://www.fargoitalia.com/" }
+      ],
+      "contact": {
+        "name": null, "role": null,
+        "email": "area.clienti@fargoitalia.com",
+        "emailSourceUrl": "https://www.fargoitalia.com/",
+        "linkedinUrl": null,
+        "phone": "+39 0331 727055",
+        "found": true
+      },
+      "sources": [
+        { "url": "https://www.fargoitalia.com/", "title": "Sito ufficiale Fargo Italia (pagina consultata direttamente)" }
+      ]
+    }
+  ]
+}
