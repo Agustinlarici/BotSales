@@ -1,0 +1,53 @@
+{
+  "campaignId": 1,
+  "companiesFound": 2,
+  "companiesRejected": 0,
+  "notes": "Decimoquinta corrida.",
+  "prospects": [
+    {
+      "website": "https://www.dgfgomma.it/",
+      "companyName": "D.G.F. S.r.l.",
+      "country": "Italia",
+      "region": "Veneto",
+      "province": "TV",
+      "city": "Sant'Alberto di Zero Branco",
+      "sector": "Articoli tecnici in gomma (guarnizioni, membrane, ruote, soffietti)",
+      "companySizeEstimate": "Non confermato pubblicamente",
+      "score": 45,
+      "reasonSummary": "Produttore di articoli tecnici in gomma per meccanica, agricoltura, enologia, legno/vetro e ospedaliero; email aziendale diretta pubblicata. Dimensione non confermata.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 8, "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.", "evidenceSourceUrl": "https://www.dgfgomma.it/" },
+        { "criterionId": 2, "pointsAwarded": 3, "evidenceText": "Numero di dipendenti non confermato pubblicamente.", "evidenceSourceUrl": null },
+        { "criterionId": 3, "pointsAwarded": 0, "evidenceText": "Nessuna menzione pubblica di digitalizzazione trovata.", "evidenceSourceUrl": null },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Produzione di guarnizioni, membrane, ruote e soffietti in gomma per svariati settori: stampaggio seriale ripetitivo.", "evidenceSourceUrl": "https://www.dgfgomma.it/" },
+        { "criterionId": 5, "pointsAwarded": 16, "evidenceText": "Email aziendale diretta pubblica (info@dgfgomma.it) con telefono; nessun nominativo individuale trovato.", "evidenceSourceUrl": "https://www.dgfgomma.it/" }
+      ],
+      "contact": { "name": null, "role": null, "email": "info@dgfgomma.it", "emailSourceUrl": "https://www.dgfgomma.it/", "linkedinUrl": null, "phone": "0422 488156", "found": true },
+      "sources": [{ "url": "https://www.dgfgomma.it/", "title": "Sito ufficiale D.G.F. Gomma (pagina consultata direttamente)" }]
+    },
+    {
+      "website": "https://www.abigomma.it/",
+      "companyName": "Abi Gomma S.r.l.",
+      "country": "Italia",
+      "region": "Lombardia",
+      "province": "MI",
+      "city": "Novate Milanese (sede); unità produttiva a Livorno Ferraris, VC",
+      "sector": "Trasformazione gomma, gomma espansa, polietileni e poliuretani",
+      "companySizeEstimate": "6-9 dipendenti (registro camerale) — sotto il target di 10-50",
+      "score": 38,
+      "reasonSummary": "Trasformatore di gomma tecnica (fustellatura, trafilatura, stampaggio) certificato ISO 9001, dal 1985. Dimensione sotto il range dichiarato; solo PEC trovata, non email diretta a persona.",
+      "criteriaScores": [
+        { "criterionId": 1, "pointsAwarded": 8, "evidenceText": "Nessuna evidenza diretta pubblicata; punteggio minimo per il tipo di attività.", "evidenceSourceUrl": "https://www.abigomma.it/" },
+        { "criterionId": 2, "pointsAwarded": 2, "evidenceText": "Registro camerale indica 6-9 dipendenti, sotto il range 10-50.", "evidenceSourceUrl": "https://www.ufficiocamerale.it/7581/abi-gomma-srl" },
+        { "criterionId": 3, "pointsAwarded": 0, "evidenceText": "Nessuna menzione pubblica di digitalizzazione trovata.", "evidenceSourceUrl": null },
+        { "criterionId": 4, "pointsAwarded": 18, "evidenceText": "Fustellatura, trafilatura, stampaggio, taglio a plotter/waterjet: processi produttivi seriali ripetitivi.", "evidenceSourceUrl": "https://www.abigomma.it/" },
+        { "criterionId": 5, "pointsAwarded": 10, "evidenceText": "PEC pubblica trovata (abigomma@legalmail.it) con telefono; nessun nominativo individuale trovato.", "evidenceSourceUrl": "https://www.ufficiocamerale.it/7581/abi-gomma-srl" }
+      ],
+      "contact": { "name": null, "role": null, "email": "abigomma@legalmail.it", "emailSourceUrl": "https://www.ufficiocamerale.it/7581/abi-gomma-srl", "linkedinUrl": null, "phone": "+39 02 3561409", "found": true },
+      "sources": [
+        { "url": "https://www.abigomma.it/", "title": "Sito ufficiale Abi Gomma (pagina consultata direttamente)" },
+        { "url": "https://www.ufficiocamerale.it/7581/abi-gomma-srl", "title": "Dati societari e dipendenti" }
+      ]
+    }
+  ]
+}
